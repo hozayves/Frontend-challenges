@@ -5,7 +5,6 @@
     <img width="100%" src="https://github.com/hozayves/Frontend-challenges/blob/main/qr-code-component-main/screenshot/qr-code-component.PNG" alt="Material Bread logo">
 </p>
 <p align="center">
-    <span>[Live] (https://hozayves.io)</span> | <span>Solution</span> | <span>Challenge</span>
+    <h3><a href="">Live</a></h3> | <h3>Solution</h3> | <h3>Challenge</h3>
 </p>
-<p align="center">Solution for a challenge from frontendmentor.io</p>
-[Live] (https://hozayves.io)
+<p align="center">Solution for a challenge from frontendmentor.io</p>=
