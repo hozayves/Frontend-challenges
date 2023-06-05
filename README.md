@@ -11,4 +11,4 @@
         <a href="">Challenge</a>
     </h3>
 </div>
-<p align="center">Solution for a challenge from frontendmentor.io</p>=
+<p align="center">Solution for a challenge from <a href="https://frontendmentor.io">frontendmentor.io</a></p>
