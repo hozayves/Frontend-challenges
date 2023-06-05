@@ -1,6 +1,6 @@
 <h1 align="center">Frontend-mentor Challenges</h1>
 
-## QR-Code-Component main #1
+# QR-Code-Component main #1
 <p align="center">
     <img width="100%" src="https://github.com/hozayves/Frontend-challenges/blob/main/qr-code-component-main/screenshot/qr-code-component.PNG" alt="Material Bread logo">
 </p>
@@ -40,3 +40,5 @@ Very easy project for someone who recently stepped in the world of development! 
 ## Acknowledgments
 
 A big thank you to anyone providing feedback on my <a href="">Solution</a>. It definitely helps to find new ways to code and find easier solutions!
+
+# Result-Summary-Component #2
