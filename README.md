@@ -1,4 +1,6 @@
 <h1 align="center">Frontend-mentor Challenges</h1>
 
 ## QR-Code-Component main #1
-<h1 font-weight="bold" font-size="16px">Live</h1>
+<p align="center">
+    <img width="200" src="https://github.com/hozayves/Frontend-challenges/blob/main/qr-code-component-main/screenshot/qr-code-component.PNG" alt="Material Bread logo">
+</p>
