@@ -4,3 +4,6 @@
 <p align="center">
     <img width="100%" src="https://github.com/hozayves/Frontend-challenges/blob/main/qr-code-component-main/screenshot/qr-code-component.PNG" alt="Material Bread logo">
 </p>
+<p align="center">
+    <span>Live</span> | <span>Solution</span> | <span>Challenge</span>
+</p>
