@@ -1,2 +1,1 @@
-# Frontend-challenges
-Frontend UI/UX challenges
+<h1 align="center">Frontend-mentor Challenges</h1>
