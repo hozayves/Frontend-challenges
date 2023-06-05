@@ -8,3 +8,4 @@
     <span>[Live] (https://hozayves.io)</span> | <span>Solution</span> | <span>Challenge</span>
 </p>
 <p align="center">Solution for a challenge from frontendmentor.io</p>
+[Live] (https://hozayves.io)
