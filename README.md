@@ -43,7 +43,7 @@ A big thank you to anyone providing feedback on my <a href="">Solution</a>. It d
 
 ## Result-Summary-Component #2
 <p align="center">
-    <img width="100%" src="https://github.com/hozayves/Frontend-challenges/blob/main/qr-code-component-main/screenshot/capture.PNG" alt="Material Bread logo">
+    <img width="100%" src="https://github.com/hozayves/Frontend-challenges/blob/main/results-summary-component-main/screenshot/Capture.PNG" alt="Material Bread logo">
 </p>
 <div align="center">
     <h3>
