@@ -1,0 +1,298 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;500;700;800&display=swap');
+
+/* CSS Variable */
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --conalt-blue: hsl(234, 85%, 45%);
+
+    --light-slate-blue: hsl(252, 100%, 67%); /*bg*/
+    --light-royal-blue: hsl(241, 81%, 54%); /*bg*/
+    --violet-blue: hsla(256, 72%, 46%, 1); /*circle*/
+    --persian-blue: hsla(241, 72%, 46%, 0); /*circle*/
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-labender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%)
+}
+/* RESET CSS */
+/* Removing box sizing */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Removing outline to form element*/
+input,
+button,
+textarea,
+select
+{
+    outline: none;
+    font: inherit;
+}
+/* Removing padding and margin */
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+/* Removing default list style */
+ul[role='list'],
+ol[role='list'],
+ul, ol{
+    list-style-type: none;
+}
+/* Set core root rule */
+html:focus-within{
+    scroll-behavior: smooth;
+}
+/* Set core body rule */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+/* Set img/picture easier */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+/* Removing animation */
+@media(preferes-reduce-motion: reduce){
+    html:focus-within{
+        scroll-behavior: auto;
+    }
+    *, *::after, *::before {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+body {
+    background-color: var(--white);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: max(35%, 35rem);
+    -webkit-box-shadow: 6px 8px 18px -6px var(--light-labender);
+        -moz-box-shadow: 6px 8px 18px -6px var(--light-labender);
+        box-shadow: 6px 8px 18px -6px var(--light-labender);
+    height: auto;
+    border-radius: 1.5rem;
+}
+.result, .summary{
+    flex-basis: 50%;
+    height: auto;
+}
+.result {
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    background: linear-gradient(to bottom,
+            var(--light-slate-blue),
+            var(--light-royal-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result .title {
+    color: var(--light-labender);
+    margin-bottom: 1rem;
+}
+.title{
+    font-family: inherit;
+    font-size: 1rem;
+}
+.circle {
+    padding: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,
+            var(--violet-blue),
+            var(--persian-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circle h1 {
+    font-size: 3rem;
+}
+.circle p {
+    color: var(--light-labender);
+    font-size: 0.8rem;
+    margin-top: -0.8rem;
+}
+.result-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    padding: 5px;
+}
+.result-info span {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+.result-info p{
+    color: var(--pale-blue);
+    font-weight: 200;
+    line-height: 1;
+    font-size: 1rem;
+}
+.summary {
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.rows {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+.badge {
+    display: flex;
+    flex-direction: row;
+}
+.badge span {
+    margin-left: 6px;
+}
+.color-1 {
+    background-color: hsla(0, 100%, 67%, 10%);
+}
+.badge-color-1 {
+    color: var(--light-red);
+}
+.color-2 {
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+.badge-color-2 {
+    color: var(--orangey-yellow);
+}
+.color-3 {
+    background-color: hsla(166, 100%, 37%, 10%);
+}
+.badge-color-3 {
+    color: var(--green-teal);
+}
+.color-4 {
+    background-color: hsla(234, 85%, 45%, 10%);
+}
+.badge-color-4 {
+    color: var(--conalt-blue);
+}
+.row > p >span:first-child {
+    font-weight: 700;
+}
+.submit {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 0;
+    background-color: hsl(0deg 0% 23%);
+    color: var(--pale-blue);
+    font-weight: 400;
+}
+.submit:hover{
+    background: linear-gradient(to bottom,
+                var(--light-slate-blue),
+                var(--light-royal-blue))
+}
+footer {
+    width: 100%;
+    padding: 1rem;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer li {
+    margin:0 5px;
+}
+footer img {
+    width: 20px;
+    height: 20px;
+}
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a img {
+    margin-right: 5px;
+}
+@media screen  and (max-width: 414px){
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+        height: 100vh;
+    }
+    .result {
+        border-radius: 0 0 1.5rem 1.5rem;
+        padding-bottom: 0;
+    }
+    .summary {
+        /* border: 1px solid red */
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+    .rows {
+        gap: 0.7rem;
+    }
+    .row {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .submit {
+        padding: 0.8rem 1rem;
+    }
+}
