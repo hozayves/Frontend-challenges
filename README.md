@@ -42,3 +42,14 @@ Very easy project for someone who recently stepped in the world of development! 
 A big thank you to anyone providing feedback on my <a href="">Solution</a>. It definitely helps to find new ways to code and find easier solutions!
 
 ## Result-Summary-Component #2
+<p align="center">
+    <img width="100%" src="https://github.com/hozayves/Frontend-challenges/blob/main/qr-code-component-main/screenshot/capture.PNG" alt="Material Bread logo">
+</p>
+<div align="center">
+    <h3>
+        <a href="https://hozayves-result-component.netlify.app/">Live</a> <span>|</span> 
+        <a href="">Solution</a> <span>|</span> 
+        <a href="">Challenge</a>
+    </h3>
+</div>
+<p align="center">Solution for a challenge from <a href="https://frontendmentor.io">frontendmentor.io</a></p>
