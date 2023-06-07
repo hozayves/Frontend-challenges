@@ -53,3 +53,16 @@ A big thank you to anyone providing feedback on my <a href="">Solution</a>. It d
     </h3>
 </div>
 <p align="center">Solution for a challenge from <a href="https://frontendmentor.io">frontendmentor.io</a></p>
+
+# Testimonial-component-main #3
+<p align="center">
+    <img width="100%" src="https://github.com/hozayves/Frontend-challenges/blob/main/testimonial-grid-section-main/screenshot/Capture.PNG" alt="Material Bread logo">
+</p>
+<div align="center">
+    <h3>
+        <a href="https://testimonial-component-hozayves.netlify.app/">Live</a> <span>|</span> 
+        <a href="">Solution</a> <span>|</span> 
+        <a href="">Challenge</a>
+    </h3>
+</div>
+<p align="center">Solution for a challenge from <a href="https://frontendmentor.io">frontendmentor.io</a></p>
