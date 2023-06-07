@@ -84,6 +84,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
 .product {
     flex-basis: 50%;
     height: 100%;
@@ -157,6 +163,40 @@ body {
 .submit:hover {
     background-color: hsl(158, 36%, 17%);
 }
+.submit::before {
+    content: url(../images/icon-cart.svg);
+    color: white;
+    vertical-align: -10px;
+    margin-right: 0.5rem;
+}
 .submit img {
     margin-right: 10px;
+}
+@media screen and (max-width: 414px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: max(20%, 20rem);
+        height: 95%;
+    }
+    .product {
+        width: 100%;
+        height: 50%;
+    }
+    .product .desktop{
+        display: none;
+    }
+    .product .mobile {
+        display: block;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        border-radius: 1rem;
+    }
 }
