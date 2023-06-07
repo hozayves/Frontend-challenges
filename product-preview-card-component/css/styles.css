@@ -1,0 +1,162 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+/* css color variable */
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+/* CSS rules */
+/* Box sizing */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+/* Removing outline to form element */
+input,
+button,
+textarea,
+select {
+    outline: none;
+    font: inherit;
+}
+/* Removing margin, padding */
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+blockquote,
+figcaption,
+figure{
+    margin: 0;
+    padding: 0;
+}
+/* Removing default list style */
+ol[role="list"],
+ul[role="list"],
+ol,
+ul {
+    list-style-type: none;
+}
+/* Set core root rule */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+/* Set core body rule */
+body {
+    line-height: 1.5;
+    height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+/* Set img/picture easier */
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+/* Removing animation */
+@media(prefers-reduce-motion: reduce){
+    html:focus-within{
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* End of reset css */
+body {
+    font-size: 14px;
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: max(30%, 30rem);
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 3px 2px 13px -6px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.product {
+    flex-basis: 50%;
+    height: 100%;
+}
+.product img {
+    border-radius: 1rem 0 0 1rem;
+    height: 100%;
+}
+.product-info{
+    flex-basis: 50%;
+    height: 100%;
+    padding: 1.3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.product-info > span {
+    color: var(--dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+.product-info > h3 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.product-info > .product-content {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+    font-size: 0.75rem;
+}
+.product-pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fraunces', sans-serif;
+}
+.product-pricing > .current-price {
+    font-size: 1.6rem;
+    color: var(--dark-cyan)
+}
+.product-pricing > .past-price {
+    margin-left: 10px;
+    font-size: .7rem;
+    color: var(--dark-grayish-blue);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.submit {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding:.6rem;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+    font-size: .8rem;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: hsl(158, 36%, 17%);
+}
+.submit img {
+    margin-right: 10px;
+}
