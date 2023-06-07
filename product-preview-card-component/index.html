@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +8,27 @@
     <meta name="keywords" content="HTML, CSS, SASS">
     <meta name="description" content="Product preview card component">
     <link rel="icon" type="image/icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Product Card Preview | hozayves</title>
 </head>
-
 <body>
-
+    <main class="container">
+        <section class="product">
+            <img src="./images/image-product-desktop.jpg" alt="product image">
+        </section>
+        <section class="product-info">
+            <span>perfume</span>
+            <h3>Gabrielle Essence Eau De Parfum</h3>
+            <p class="product-content">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the house of CHANEL.</p>
+            <p class="product-pricing">
+                <span class="current-price">$149.99</span>
+                <span class="past-price">$169.99</span>
+            </p>
+            <button type="submit" class="submit">
+                <img src="./images/icon-cart.svg" alt="icon cart">
+                Add to Cart
+            </button>
+        </section>
+    </main>
 </body>
-
 </html>
