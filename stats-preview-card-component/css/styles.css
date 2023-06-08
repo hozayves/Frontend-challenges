@@ -1,0 +1,206 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+/* color variable */
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%); /*main bg*/
+    --dark-desaturated-blue: hsl(244, 38%, 16%); /*card bg*/
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-head: hsla(0, 0%, 100%, 0.6);
+}
+/* CSS reset */
+
+/* Reset box sizing */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+/* Removing outline to form element */
+input,
+textarea,
+select,
+button {
+    outline: none;
+    font: none;
+}
+/* Removing margin and padding */
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+figure,
+figcaption,
+blockquote,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+/* Removing default list style */
+ol[role="list"],
+ul[role="list"],
+ul,
+ol {
+    list-style-type: none;
+}
+/* Set core roles */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+/* Set body rules */
+body {
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    height: 100vh;
+}
+/* Set img/picture easier */
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+/* Removing animation */
+@media(preferes-reduce-motion: reduce){
+    html:focus-within{
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* End of reset css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: max(50%, 50rem);
+    height: auto;
+    background-color: var(--dark-desaturated-blue);
+    border-radius: 15px;
+}
+.card-1{
+    padding: 2rem 3rem;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card-1 .title {
+    font-size: 1.7rem;
+    word-spacing: 0.2rem;
+    line-height: 1.3;
+}
+.card-1 .title > span {
+    color: var(--soft-violet);
+}
+.card-1 p {
+    font-size: 0.75rem;
+    color: var(--slightly-transparent-white);
+    line-height: 1.7;
+    font-weight: 400;
+}
+.stats {
+    align-self: flex-end;
+    width: 100%;
+}
+.stats ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.stats ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.stats ul li span:first-child{
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.stats ul li span:last-child{
+    color: var(--slightly-transparent-head);
+    font-size: .7rem;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+}
+.card-2{
+    flex-basis: 50%;
+    display: relative;
+}
+.card-2 img {
+    height: 100%;
+    border-radius:0 15px 15px 0;
+    position: relative;
+    top: -20.6rem;
+    z-index: 0;
+}
+.card-2 .overlay {
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    background-color: hsla(254, 63%, 47%, 62%);
+    z-index: 1;
+}
+.deskop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width: 414px) {
+    .desktop{
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .container {
+    flex-direction: column;
+    justify-content: center;
+    width: max(20%, 20rem);
+    text-align: center;
+    }
+    .card-1{
+        order: 1
+    }
+    .stats {
+        align-self: center;
+        width: 100%;
+    }
+
+    .stats ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+    .card-1 .title {
+        font-size: 1.4rem;
+    }
+    .card-2 {
+        order: 0;
+    }
+    .card-2 img {
+        border-radius: 15px  15px 0 0;
+        top: -16.5rem;
+    } 
+    .card-2 .overlay {
+        border-radius: 15px 15px 0 0;
+
+    }
+}
