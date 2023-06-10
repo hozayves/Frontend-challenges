@@ -99,7 +99,7 @@ A big thank you to anyone providing feedback on my <a href="">Solution</a>. It d
 </p>
 <div align="center">
     <h3>
-        <a href="https://fylo-landing-page-with-column-layout.netlify.app/">Live</a> <span>|</span> 
+        <a href="https://fylo-landing-page-with-column-layout.netlify.app/" target="_blank">Live</a> <span>|</span> 
         <a href="">Solution</a> <span>|</span> 
         <a href="">Challenge</a>
     </h3>
