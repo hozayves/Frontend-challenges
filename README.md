@@ -106,3 +106,16 @@ A big thank you to anyone providing feedback on my <a href="">Solution</a>. It d
 </div>
 <p align="center">Solution for a challenge from <a href="https://frontendmentor.io">frontendmentor.io</a></p>
 
+# 3-column-preview-card-component #7
+<p align="center">
+    <img width="100%" src="https://github.com/hozayves/Frontend-challenges/blob/main/3-column-preview-card-component/screenshot/Capture.PNG" alt="Material Bread logo">
+</p>
+<div align="center">
+    <h3>
+        <a href="https://fylo-landing-page-with-column-layout.netlify.app/" target="_blank">Live</a> <span>|</span> 
+        <a href="">Solution</a> <span>|</span> 
+        <a href="">Challenge</a>
+    </h3>
+</div>
+<p align="center">Solution for a challenge from <a href="https://frontendmentor.io">frontendmentor.io</a></p>
+
