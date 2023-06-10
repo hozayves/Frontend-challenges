@@ -171,3 +171,8 @@ section > button:hover {
         border-radius: 0 0 15px 15px;
     }
 }
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 736px;
+    }
+}
