@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="hozayves">
+    <meta name="description" content="Article preview component">
+    <meta name="keywords" content="HTML, CSS, Frontendmentor, tailwindcss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;700&display=swap" rel="stylesheet">  
+    <title>Article Preview Component | hozayves</title>
+  </head>
+  <body 
+    class="
+        h-screen
+        font-monrope
+      bg-light-grayish-blue
+        flex
+        flex-row
+        justify-center
+        items-center">
+    <div 
+      class="
+        shadow-2xl
+        w-4/5
+        mx-auto
+        rounded-lg
+        flex
+        flex-col
+        md:flex-row
+        md:max-w-3.5
+        ">
+        <img src="./public/drawers.jpg" alt=""
+          class="
+            h-60
+            w-full
+            object-cover
+            rounded-t-lg
+            md:rounded-t-none
+            md:rounded-l-lg
+            md:h-auto
+            "/>
+      <div 
+        class="
+          flex
+          flex-col
+          gap-4
+          bg-white
+          rounded-b-lg
+          md:rounded-b-none
+          md:rounded-br-lg
+          md:rounded-tr-lg
+          ">
+        <h1 
+          class="
+            font-bold
+            text-lg
+            w-full
+            text-dark-grayish-blue
+            leading-tight
+            px-8
+            pt-7
+            ">Shift the overall look and feel by adding 
+          these wonderful touches to furniture in your 
+          home
+        </h1>
+        <p
+          class="
+            leading-snug
+            text-grayish-blue font-light
+            px-9">Ever been in a room and felt like something was
+           missing? Perhaps it felt slightly bare and uninviting.
+           I've got some simple tips to help you make any room
+           feel complete.
+        </p>
+        <div class="
+            flex
+            flex-row
+            items-center
+            justify-between
+            relative
+            my-4
+            px-9
+            pr-11
+          ">
+            <div class="flex gap-3 items-center">
+              <img src="./public/avatar-michelle.jpg" alt="michelle profile" 
+                class="
+                  rounded-full
+                  w-10
+                  h-10
+                  ">
+              <div>
+                <h2 class="font-semibold text-dark-grayish-blue text-sm">Michelle Appletor</h2>
+                <p class="text-grayish-blue text-sm">28 June 2020</p>
+              </div>
+            </div>
+            <div 
+              class="
+                w-7 h-7 
+                bg-light-grayish-blue
+                  rounded-full
+                  transition-all
+                  duration-500
+                  cursor-pointer
+                  hover:cursor-pointer
+                  hover:bg-grayish-blue
+                  flex
+                  justify-center
+                  items-center
+                  
+                ">
+              <img src="./public/icon-share.svg" alt="share icon" aria-hidden="true" id="share">
+            </div>
+            
+            <div 
+              class="
+                absolute 
+                bg-dark-grayish-blue 
+                p-7
+                h-5rem
+                w-full
+                left-0
+                -bottom-4
+                rounded-b-lg
+                hidden
+                justify-between
+                items-center
+                text-light-grayish-blue
+                md:-top-6rem
+                md:left-75
+                md:px-5
+                md:h-5
+                md:max-w-max
+                md:rounded-lg
+                z-40
+                md:after:content-['']
+                md:after:w-0
+                md:after:h-0
+                md:after:absolute
+                md:after:mx-auto
+                md:after:my-0
+                md:after:left-0
+                md:after:right-0
+                md:after:-bottom-10px
+                md:after:border-t-arrow
+                md:after:border-t-dark-grayish-blue
+                md:after:border-l-arrow
+                md:after:border-l-transparent
+                md:after:border-r-arrow
+                md:after:border-r-transparent
+                md:shadow-lg
+              " role="alert">
+              <div class="flex gap-4 items-center justify-center">
+                <span 
+                  class="
+                    font-thin
+                    font-monrope
+                    tracking-widest
+                    text-sm
+                    uppercase mr-4">share</span>
+                <img src="./public/icon-facebook.svg" alt="">
+                <img src="./public/icon-pinterest.svg" alt="">
+                <img src="./public/icon-twitter.svg" alt="">
+              </div>
+              <div class="
+                bg-light-grayish-blue 
+                  h-7 w-7 
+                  rounded-full
+                  flex items-center justify-center
+                  transition-all
+                  hover:opacity-80
+                  hover:cursor-pointer
+                  md:hidden">
+                <img src="./public/icon-share.svg" alt="">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
