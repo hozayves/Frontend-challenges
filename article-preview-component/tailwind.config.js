@@ -18,6 +18,9 @@ export default {
       maxWidth: {
         '3.5' : '50rem'
       },
+      width: {
+        '95%' : '90%'
+      },
       inset: {
         '75' : '20.3rem'
       },
